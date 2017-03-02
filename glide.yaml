@@ -1,0 +1,7 @@
+package: github.com/SteveAzz/stream-api
+import:
+- package: github.com/gocql/gocql
+- package: github.com/gorilla/mux
+  version: ^1.3.0
+- package: github.com/GetStream/stream-go
+  version: ^1.0.1

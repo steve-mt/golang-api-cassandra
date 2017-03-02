@@ -1,0 +1,26 @@
+hash: ac1fe7c8cf02611c5ddbf5dc611cabc982da54715e7deaa78a58725cfb111c70
+updated: 2017-03-02T20:12:49.226738818+01:00
+imports:
+- name: github.com/GetStream/stream-go
+  version: 2e3ad0332fffac935c1e22a661d102732dd16cb5
+- name: github.com/gocql/gocql
+  version: 1f874493e9e5aebe46b312593cbd9cb5d3946eda
+  subpackages:
+  - internal/lru
+  - internal/murmur
+  - internal/streams
+- name: github.com/golang/snappy
+  version: 553a641470496b2327abcac10b36396bd98e45c9
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: 392c28fe23e1c45ddba891b0320b3b5df220beea
+- name: github.com/hailocab/go-hostpool
+  version: e80d13ce29ede4452c43dea11e79b9bc8a15b478
+- name: golang.org/x/net
+  version: 906cda9512f77671ab44f8c8563b13a8e707b230
+  subpackages:
+  - context
+- name: gopkg.in/inf.v0
+  version: 3887ee99ecf07df5b447e9b00d9c0b2adaa9f3e4
+testImports: []

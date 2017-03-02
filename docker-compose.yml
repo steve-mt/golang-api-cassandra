@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+    go:
+        build: .
+        ports:
+            - 8080:8080
+        container_name: stream-api
+        depends_on:
+            - "cassandra"
+        links:
+            - cassandra
+
+    cassandra:
+        image: cassandra:3.10
+        container_name: stream-cassandra
