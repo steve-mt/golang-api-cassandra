@@ -1,5 +1,5 @@
 hash: ac1fe7c8cf02611c5ddbf5dc611cabc982da54715e7deaa78a58725cfb111c70
-updated: 2017-03-02T20:12:49.226738818+01:00
+updated: 2017-03-03T21:21:07.237244296+01:00
 imports:
 - name: github.com/GetStream/stream-go
   version: 2e3ad0332fffac935c1e22a661d102732dd16cb5
@@ -21,6 +21,10 @@ imports:
   version: 906cda9512f77671ab44f8c8563b13a8e707b230
   subpackages:
   - context
+- name: gopkg.in/dgrijalva/jwt-go.v3
+  version: d2709f9f1f31ebcda9651b03077758c1f3a0018c
 - name: gopkg.in/inf.v0
   version: 3887ee99ecf07df5b447e9b00d9c0b2adaa9f3e4
+- name: gopkg.in/LeisureLink/httpsig.v1
+  version: 6ea498b1c82dfe8c96d45df6c5877a520ace0494
 testImports: []

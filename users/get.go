@@ -4,6 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
+	"fmt"
+
 	"github.com/SteveAzz/stream-api/cassandra"
 	"github.com/gocql/gocql"
 	"github.com/gorilla/mux"
@@ -59,7 +61,7 @@ func GetOne(w http.ResponseWriter, r *http.Request) {
 				FirstName: m["firstname"].(string),
 				LastName:  m["lastname"].(string),
 				Email:     m["email"].(string),
-				City:      m["age"].(string),
+				City:      m["city"].(string),
 			}
 		}
 
@@ -73,4 +75,27 @@ func GetOne(w http.ResponseWriter, r *http.Request) {
 	} else {
 		json.NewEncoder(w).Encode(ErrorResponse{Errors: errs})
 	}
+}
+
+func Enrich(uuids []gocql.UUID) map[string]string {
+	if len(uuids) == 0 {
+		return map[string]string{}
+	}
+
+	names := map[string]string{}
+	m := map[string]interface{}{}
+
+	query := "SELECT id,firstname,lastname FROM users WHERE id IN ?"
+
+	iterable := cassandra.Session.Query(query, uuids).Iter()
+
+	for iterable.MapScan(m) {
+		fmt.Println("m", m)
+
+		user_id := m["id"].(gocql.UUID)
+		names[user_id.String()] = fmt.Sprintf("%s %s", m["firstname"].(string), m["lastname"].(string))
+		m = map[string]interface{}{}
+	}
+
+	return names
 }
