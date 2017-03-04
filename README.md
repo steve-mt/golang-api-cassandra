@@ -1,0 +1,3 @@
+# Warning
+This code is all taken from this [article](https://getstream.io/blog/building-a-performant-api-using-go-and-cassandra/), all of the orginal code can be found [here](https://github.com/GetStream/Stream-Example-Go-Cassandra-API). This is purely for educational reasons for myself. 
+The only extra thing that I added was the `docker-compose.yml` file that helps set up the development environment much easier.
