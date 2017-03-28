@@ -1,0 +1,88 @@
+{
+    "memo": "e25f003a152c3cadb51af1750b154ac8913c5028cffcad422fe79676279c1a0d",
+    "projects": [
+        {
+            "name": "github.com/GetStream/stream-go",
+            "version": "v1.0.1",
+            "revision": "2e3ad0332fffac935c1e22a661d102732dd16cb5",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/gocql/gocql",
+            "branch": "master",
+            "revision": "1f874493e9e5aebe46b312593cbd9cb5d3946eda",
+            "packages": [
+                ".",
+                "internal/lru",
+                "internal/murmur",
+                "internal/streams"
+            ]
+        },
+        {
+            "name": "github.com/golang/snappy",
+            "branch": "master",
+            "revision": "553a641470496b2327abcac10b36396bd98e45c9",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/gorilla/context",
+            "version": "v1.1",
+            "revision": "1ea25387ff6f684839d82767c1733ff4d4d15d0a",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/gorilla/mux",
+            "branch": "master",
+            "revision": "599cba5e7b6137d46ddf58fb1765f5d928e69604",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/hailocab/go-hostpool",
+            "branch": "master",
+            "revision": "e80d13ce29ede4452c43dea11e79b9bc8a15b478",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "golang.org/x/net",
+            "branch": "master",
+            "revision": "906cda9512f77671ab44f8c8563b13a8e707b230",
+            "packages": [
+                "context"
+            ]
+        },
+        {
+            "name": "gopkg.in/LeisureLink/httpsig.v1",
+            "version": "v1.2.0",
+            "revision": "6ea498b1c82dfe8c96d45df6c5877a520ace0494",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "gopkg.in/dgrijalva/jwt-go.v3",
+            "version": "v3.0.0",
+            "revision": "d2709f9f1f31ebcda9651b03077758c1f3a0018c",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "gopkg.in/inf.v0",
+            "branch": "master",
+            "revision": "3887ee99ecf07df5b447e9b00d9c0b2adaa9f3e4",
+            "packages": [
+                "."
+            ]
+        }
+    ]
+}

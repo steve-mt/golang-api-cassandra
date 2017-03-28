@@ -1,0 +1,10 @@
+{
+    "dependencies": {
+        "github.com/gocql/gocql": {
+            "branch": "master"
+        },
+        "github.com/gorilla/mux": {
+            "branch": "master"
+        }
+    }
+}
